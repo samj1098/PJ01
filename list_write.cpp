@@ -119,7 +119,6 @@ NODE * listDelete(LIST *pLIST, double key){
     }
 
     printf("Warning in listDelete: Key %.6f not in list\n", key);
-    printf("No node deleted\n");
     return pNODE;
 
 }
