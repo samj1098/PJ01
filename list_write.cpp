@@ -59,7 +59,7 @@ NODE * listAppend(LIST *pLIST, double key){
     if (pLIST == NULL) {
 	fprintf(stderr, "Error: List NULL can't append\n");
 	return NULL;
-    }
+   	}
 
     pNODE = (NODE *)malloc(sizeof(NODE));
     if (pNODE == NULL) {
@@ -117,6 +117,9 @@ NODE * listDelete(LIST *pLIST, double key){
 	previous = current;
 	current = current->next;
     }
+
+    printf("Warning in listDelete: Key %.6f not in list\n", key);
+    printf("No node deleted\n");
     return pNODE;
 
 }
