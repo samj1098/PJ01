@@ -1,3 +1,6 @@
+//Name: Samuel Jensen
+// ASUID: 1221985843
+
 #include "list_read.h"
 #include "list_write.h"
 #include <stdio.h>
